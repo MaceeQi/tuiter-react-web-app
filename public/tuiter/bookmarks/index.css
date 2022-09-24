@@ -51,3 +51,7 @@
 .wd-padding-all-around {
     padding: 12px;
 }
+
+.wd-fg-color-red {
+    color: red;
+}

@@ -47,3 +47,7 @@ body {
 .wd-no-top-border {
     border-top: none;
 }
+
+.wd-remove-decoration {
+    text-decoration: none;
+}
