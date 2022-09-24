@@ -1,0 +1,49 @@
+body {
+    font-family: "Arial";
+    background-color: black;
+    color: white;
+}
+
+.wd-border-style {
+    position: relative;
+    border-color: rgb(47,51,54);
+    border-style: solid;
+    border-width: 1px;
+    overflow: hidden;
+}
+
+.wd-page-font-size {
+    font-size: 15px;
+}
+
+.wd-page-large-font-size {
+    font-size: 20px;
+}
+
+.wd-page-small-font-size {
+    font-size: 13px;
+}
+
+.wd-fg-color-gray {
+    color: rgb(110,118,125);
+}
+
+.wd-fg-color-white {
+    color: white;
+}
+
+.wd-padding-top {
+    padding-top: 12px;
+}
+
+.wd-padding-bottom {
+    padding-bottom: 12px;
+}
+
+.wd-margin-left-16 {
+    margin-left: 16px;
+}
+
+.wd-no-top-border {
+    border-top: none;
+}
