@@ -68,10 +68,3 @@
     /* 16 + 48 + 12 +506 + 16 = 598 */
     max-width: 598px;
 }
-
-.wd-flex-container-space-between {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    flex-wrap: wrap;
-}
