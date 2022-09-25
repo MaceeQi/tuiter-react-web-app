@@ -55,3 +55,20 @@
 .wd-fg-color-red {
     color: red;
 }
+
+.wd-width-100 {
+    width: 100%;
+}
+
+.wd-width-24 {
+    width: 24%;
+}
+
+
+
+
+.wd-flex-container-space-between {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
