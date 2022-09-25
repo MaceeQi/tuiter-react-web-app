@@ -63,3 +63,15 @@
 .wd-width-24 {
     width: 24%;
 }
+
+.wd-max-width-598 {
+    /* 16 + 48 + 12 +506 + 16 = 598 */
+    max-width: 598px;
+}
+
+.wd-flex-container-space-between {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
