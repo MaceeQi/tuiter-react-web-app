@@ -14,7 +14,7 @@
 <div class="container pt-2">
     <div class="row">
         <!-- Col 1 - Navigation Sidebar -->
-        <div class="col-2">
+        <div class="col-2 col-lg-1 col-xl-2">
             <div class="list-group">
                 <!-- Twitter -->
                 <a href="#" class="list-group-item list-group-item-action">
@@ -22,38 +22,62 @@
                 </a>
                 <!-- Home -->
                 <a href="#" class="list-group-item list-group-item-action">
-                    <i class="fa-solid fa-house-chimney"></i> Home
+                    <span class="d-flex align-items-center">
+                        <i class="fa-solid fa-house-chimney"></i>
+                        <span class="d-none d-xl-block ms-1">Home</span>
+                    </span>
                 </a>
                 <!-- Explore -->
                 <a href="#" class="list-group-item list-group-item-action active">
-                    <i class="fa-solid fa-hashtag"></i> Explore
+                    <span class="d-flex align-items-center">
+                        <i class="fa-solid fa-hashtag"></i>
+                        <span class="d-none d-xl-block ms-1">Explore</span>
+                    </span>
                 </a>
                 <!-- Notifications -->
                 <a href="#" class="list-group-item list-group-item-action">
-                    <i class="fa-solid fa-bell"></i> Notifications
+                    <span class="d-flex align-items-center">
+                        <i class="fa-solid fa-bell"></i>
+                        <span class="d-none d-xl-block ms-1">Notifications</span>
+                    </span>
                 </a>
                 <!-- Messages -->
                 <a href="#" class="list-group-item list-group-item-action">
-                    <i class="fa-solid fa-envelope"></i> Messages
+                    <span class="d-flex align-items-center">
+                        <i class="fa-solid fa-envelope"></i>
+                        <span class="d-none d-xl-block ms-1">Messages</span>
+                    </span>
                 </a>
                 <!-- Bookmarks -->
                 <a href="#" class="list-group-item list-group-item-action">
-                    <i class="fa-solid fa-bookmark"></i> Bookmarks
+                    <span class="d-flex align-items-center">
+                        <i class="fa-solid fa-bookmark"></i>
+                        <span class="d-none d-xl-block ms-1">Bookmarks</span>
+                    </span>
                 </a>
                 <!-- Lists -->
                 <a href="#" class="list-group-item list-group-item-action">
-                    <i class="fa-solid fa-list"></i> Lists
+                    <span class="d-flex align-items-center">
+                        <i class="fa-solid fa-list"></i>
+                        <span class="d-none d-xl-block ms-1">Lists</span>
+                    </span>
                 </a>
                 <!-- Profile -->
                 <a href="#" class="list-group-item list-group-item-action">
-                    <i class="fa-solid fa-user"></i> Profile
+                    <span class="d-flex align-items-center">
+                        <i class="fa-solid fa-user"></i>
+                        <span class="d-none d-xl-block ms-1">Profile</span>
+                    </span>
                 </a>
                 <!-- More -->
                 <a href="#" class="list-group-item list-group-item-action ps-2">
-                    <span class="fa-stack wd-width-more">
+                    <span class="d-flex align-items-center">
+                        <span class="fa-stack wd-width-more">
                         <i class="fa-solid fa-circle fa-stack-1x"></i>
                         <i class="fa-solid fa-ellipsis fa-inverse fa-stack-1x"></i>
-                    </span>More
+                        </span>
+                        <span class="d-none d-xl-block">More</span>
+                    </span>
                 </a>
             </div>
             <button class="btn btn-primary rounded-pill w-100 mt-2">
@@ -62,7 +86,7 @@
         </div>
 
         <!-- Col 2 - Main Content-->
-        <div class="col-6">
+        <div class="col-10 col-lg-7 col-xl-6">
             <!-- search bar -->
             <div class="row">
                 <!-- input field -->
@@ -91,7 +115,7 @@
                 <li class="nav-item">
                     <a class="nav-link" href="sports.html">Sports</a>
                 </li>
-                <li class="nav-item">
+                <li class="nav-item d-none d-md-block">
                     <a class="nav-link" href="entertainment.html">Entertainment</a>
                 </li>
             </ul>
@@ -198,11 +222,13 @@
         </div>
 
         <!-- Col 3 - Follow Suggestions Sidebar -->
-        <div class="col-4">
+        <div class="d-none d-lg-block col-4">
             <ul class="list-group">
+                <!-- title -->
                 <li class="list-group-item">
                     <span class="fw-bolder">Who to follow</span>
                 </li>
+                <!-- profile #1 -->
                 <li class="list-group-item">
                     <div class="row">
                         <!-- avatar image -->
@@ -219,11 +245,12 @@
                             </div>
                         </div>
                         <!-- follow button -->
-                        <div class="col-3 d-flex align-items-center">
-                            <button class="btn btn-primary rounded-pill w-100">Follow</button>
+                        <div class="col-3 d-flex align-items-center ps-0">
+                            <button class="btn btn-primary rounded-pill wd-follow-button-width">Follow</button>
                         </div>
                     </div>
                 </li>
+                <!-- profile #2 -->
                 <li class="list-group-item">
                     <div class="row">
                         <!-- avatar image -->
@@ -240,11 +267,12 @@
                             </div>
                         </div>
                         <!-- follow button -->
-                        <div class="col-3 d-flex align-items-center">
-                            <button class="btn btn-primary rounded-pill w-100">Follow</button>
+                        <div class="col-3 d-flex align-items-center ps-0">
+                            <button class="btn btn-primary rounded-pill wd-follow-button-width">Follow</button>
                         </div>
                     </div>
                 </li>
+                <!-- profile #3 -->
                 <li class="list-group-item">
                     <div class="row">
                         <!-- avatar image -->
@@ -261,11 +289,12 @@
                             </div>
                         </div>
                         <!-- follow button -->
-                        <div class="col-3 d-flex align-items-center">
-                            <button class="btn btn-primary rounded-pill w-100">Follow</button>
+                        <div class="col-3 d-flex align-items-center ps-0">
+                            <button class="btn btn-primary rounded-pill wd-follow-button-width">Follow</button>
                         </div>
                     </div>
                 </li>
+                <!-- profile #4 -->
                 <li class="list-group-item">
                     <div class="row">
                         <!-- avatar image -->
@@ -282,11 +311,12 @@
                             </div>
                         </div>
                         <!-- follow button -->
-                        <div class="col-3 d-flex align-items-center">
-                            <button class="btn btn-primary rounded-pill w-100">Follow</button>
+                        <div class="col-3 d-flex align-items-center ps-0">
+                            <button class="btn btn-primary rounded-pill  wd-follow-button-width">Follow</button>
                         </div>
                     </div>
                 </li>
+                <!-- profile #5 -->
                 <li class="list-group-item">
                     <div class="row">
                         <!-- avatar image -->
@@ -303,8 +333,8 @@
                             </div>
                         </div>
                         <!-- follow button -->
-                        <div class="col-3 d-flex align-items-center">
-                            <button class="btn btn-primary rounded-pill w-100">Follow</button>
+                        <div class="col-3 d-flex align-items-center ps-0">
+                            <button class="btn btn-primary rounded-pill wd-follow-button-width">Follow</button>
                         </div>
                     </div>
                 </li>
