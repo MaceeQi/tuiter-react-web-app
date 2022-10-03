@@ -88,3 +88,8 @@
     height: 50px;
     object-fit: cover;
 }
+
+.fa-stack.wd-width-more {
+    margin-left: 4px;
+    width: 24px;
+}
