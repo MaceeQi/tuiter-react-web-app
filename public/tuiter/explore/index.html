@@ -3,93 +3,317 @@
 <head>
     <meta charset="UTF-8">
     <title>Tuiter - Explore</title>
+    <link href="../../vendors/bootstrap/css/bootstrap.min.css" rel="stylesheet"/>
     <link href="index.css" rel="stylesheet"/>
     <link href="../styles.css" rel="stylesheet"/>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+          rel="stylesheet"/>
 </head>
 <body>
 
-<div class="wd-border-style">
-    <!-- Search Tuiter -->
-    <input placeholder="Search Tuiter"
-           class="wd-margin-left-16
-                  wd-rounded-corners-all-around
-                  wd-bg-color-dark-gray
-                  wd-fg-color-white
-                  wd-resized-textbox
-                  wd-page-font-size"/>
+<div class="container pt-2">
+    <div class="row">
+        <!-- Col 1 - Navigation Sidebar -->
+        <div class="col-2">
+            <div class="list-group">
+                <!-- Twitter -->
+                <a href="#" class="list-group-item list-group-item-action">
+                    <i class="fa-brands fa-twitter"></i>
+                </a>
+                <!-- Home -->
+                <a href="#" class="list-group-item list-group-item-action">
+                    <i class="fa-solid fa-house-chimney"></i> Home
+                </a>
+                <!-- Explore -->
+                <a href="#" class="list-group-item list-group-item-action active">
+                    <i class="fa-solid fa-hashtag"></i> Explore
+                </a>
+                <!-- Notifications -->
+                <a href="#" class="list-group-item list-group-item-action">
+                    <i class="fa-solid fa-bell"></i> Notifications
+                </a>
+                <!-- Messages -->
+                <a href="#" class="list-group-item list-group-item-action">
+                    <i class="fa-solid fa-envelope"></i> Messages
+                </a>
+                <!-- Bookmarks -->
+                <a href="#" class="list-group-item list-group-item-action">
+                    <i class="fa-solid fa-bookmark"></i> Bookmarks
+                </a>
+                <!-- Lists -->
+                <a href="#" class="list-group-item list-group-item-action">
+                    <i class="fa-solid fa-list"></i> Lists
+                </a>
+                <!-- Profile -->
+                <a href="#" class="list-group-item list-group-item-action">
+                    <i class="fa-solid fa-user"></i> Profile
+                </a>
+                <!-- More -->
+                <a href="#" class="list-group-item list-group-item-action wd-icon-stack">
+                    <span class="fa-stack">
+                        <i class="fa-solid fa-circle fa-stack-1x"></i>
+                        <i class="fa-solid fa-ellipsis fa-inverse fa-stack-1x"></i>
+                    </span>More
+                </a>
+            </div>
+            <button class="btn btn-primary rounded-pill w-100 mt-2">
+                Tuit
+            </button>
+        </div>
 
-    <!-- Gear to explore-settings.html -->
-    <a href="explore-settings.html"
-       class="wd-pos-absolute-right-offset wd-remove-decoration
-              wd-fg-color-blue wd-page-large-font-size">&#9881;</a>
+        <!-- Col 2 - Main Content-->
+        <div class="col-6">
+            <!-- search bar -->
+            <div class="row">
+                <!-- input field -->
+                <div class="col-11">
+                    <div class="position-relative">
+                        <input class="ps-5 form-control rounded-pill" placeholder="Search Tuiter"/>
+                        <i class="position-absolute wd-search-tuiter fa-solid fa-magnifying-glass"></i>
+                    </div>
+                </div>
+                <!-- cog -->
+                <div class="col-1 text-primary d-flex align-items-center">
+                    <i class="fa-solid fa-gear fa-xl"></i>
+                </div>
+            </div>
+            <!-- tabs -->
+            <ul class="nav nav-tabs mt-2 mb-2">
+                <li class="nav-item">
+                    <a class="nav-link active" href="for-you.html">For you</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="trending.html">Trending</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="news.html">News</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="sports.html">Sports</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="entertainment.html">Entertainment</a>
+                </li>
+            </ul>
+            <!-- main content image -->
+            <div class="position-relative">
+                <img class="w-100" src="../../images/starship.jpg">
+                <h2 class="position-absolute text-white bottom-0 ms-2">SpaceX's Starship</h2>
+            </div>
+            <!-- tuits -->
+            <ul class="list-group">
+                <!-- post #1 -->
+                <li class="list-group-item">
+                    <div class="row">
+                        <!-- words -->
+                        <div class="col-8">
+                            <div class="text-secondary">Web Development</div>
+                            <div>
+                                <span class="fw-bolder">
+                                    ReactJS <i class="fa-solid fa-circle-check"></i>
+                                </span>
+                                <span class="text-secondary"> - 2h</span>
+                            </div>
+                            <div class="fw-bolder">
+                                React.js is a component based front end library that makes it very
+                                easy to build Single Page Applications or SPAs
+                            </div>
+                        </div>
+                        <!-- image -->
+                        <div class="col-4">
+                            <img class="float-end rounded-3" src="../../images/react-logo.png" height="100px">
+                        </div>
+                    </div>
+                </li>
+                <!-- post #2 -->
+                <li class="list-group-item">
+                    <div class="row">
+                        <!-- words -->
+                        <div class="col-8">
+                            <div>
+                                <span class="fw-bolder">
+                                    JavaScript <i class="fa-solid fa-circle-check"></i>
+                                </span>
+                                <span class="text-secondary"> - 2h</span>
+                            </div>
+                            <div class="fw-bolder">
+                                JavaScript is programming language that can run on browsers as well
+                                as desktops
+                            </div>
+                            <div class="text-secondary">
+                                123K Tuits
+                            </div>
+                        </div>
+                        <!-- image -->
+                        <div class="col-4">
+                            <img class="float-end rounded-3" src="../../images/javascript-logo.png"
+                                 height="100px">
+                        </div>
+                    </div>
+                </li>
+                <!-- post #3 -->
+                <li class="list-group-item">
+                    <div class="row">
+                        <!-- words -->
+                        <div class="col-8">
+                            <div class="text-secondary">Web Development</div>
+                            <div class="fw-bolder">
+                                jQuery
+                            </div>
+                            <div class="text-secondary">
+                                123K Tuits
+                            </div>
+                        </div>
+                        <!-- image -->
+                        <div class="col-4">
+                            <img class="float-end rounded-3" src="../../images/jquery-logo.png"
+                                 height="100px">
+                        </div>
+                    </div>
+                </li>
+                <!-- post #4 -->
+                <li class="list-group-item">
+                    <div class="row">
+                        <!-- words -->
+                        <div class="col-8">
+                            <div class="text-secondary">Web Development</div>
+                            <div>
+                                <span class="fw-bolder">
+                                    NodeJS <i class="fa-solid fa-circle-check"></i>
+                                </span>
+                                <span class="text-secondary"> - 2h</span>
+                            </div>
+                            <div class="text-secondary">
+                                123K Tuits
+                            </div>
+                        </div>
+                        <!-- image -->
+                        <div class="col-4">
+                            <img class="float-end rounded-3" src="../../images/nodejs-logo.png"
+                                 height="100px">
+                        </div>
+                    </div>
+                </li>
+            </ul>
+        </div>
 
-    <!-- Navigation Tabs -->
-    <ul class="wd-nav-tabs">
-        <li><span class="wd-selected">For you</span></li>
-        <li><span>Trending</span></li>
-        <li><span>COVID-19</span></li>
-        <li><span>News</span></li>
-        <li><span>Sports</span></li>
-        <li><span>Entertainment</span></li>
-    </ul>
+        <!-- Col 3 - Follow Suggestions Sidebar -->
+        <div class="col-4">
+            <ul class="list-group">
+                <li class="list-group-item">
+                    <span class="fw-bolder">Who to follow</span>
+                </li>
+                <li class="list-group-item">
+                    <div class="row">
+                        <!-- avatar image -->
+                        <div class="col-2">
+                            <img class="wd-circle-avatar" src="../../images/java-logo.png">
+                        </div>
+                        <!-- name -->
+                        <div class="col-7">
+                            <div class="fw-bolder">
+                                Java <i class="fa-solid fa-circle-check"></i>
+                            </div>
+                            <div>
+                                @Java
+                            </div>
+                        </div>
+                        <!-- follow button -->
+                        <div class="col-3 d-flex align-items-center">
+                            <button class="btn btn-primary rounded-pill w-100">Follow</button>
+                        </div>
+                    </div>
+                </li>
+                <li class="list-group-item">
+                    <div class="row">
+                        <!-- avatar image -->
+                        <div class="col-2">
+                            <img class="wd-circle-avatar" src="../../images/relativity-space-logo.jpg">
+                        </div>
+                        <!-- name -->
+                        <div class="col-7">
+                            <div class="fw-bolder">
+                                Relativity Space <i class="fa-solid fa-circle-check"></i>
+                            </div>
+                            <div>
+                                @relativityspace
+                            </div>
+                        </div>
+                        <!-- follow button -->
+                        <div class="col-3 d-flex align-items-center">
+                            <button class="btn btn-primary rounded-pill w-100">Follow</button>
+                        </div>
+                    </div>
+                </li>
+                <li class="list-group-item">
+                    <div class="row">
+                        <!-- avatar image -->
+                        <div class="col-2">
+                            <img class="wd-circle-avatar" src="../../images/virgin-logo.png">
+                        </div>
+                        <!-- name -->
+                        <div class="col-7">
+                            <div class="fw-bolder">
+                                Virgin Galactic <i class="fa-solid fa-circle-check"></i>
+                            </div>
+                            <div>
+                                @virgingalactic
+                            </div>
+                        </div>
+                        <!-- follow button -->
+                        <div class="col-3 d-flex align-items-center">
+                            <button class="btn btn-primary rounded-pill w-100">Follow</button>
+                        </div>
+                    </div>
+                </li>
+                <li class="list-group-item">
+                    <div class="row">
+                        <!-- avatar image -->
+                        <div class="col-2">
+                            <img class="wd-circle-avatar" src="../../images/nasa-logo.png">
+                        </div>
+                        <!-- name -->
+                        <div class="col-7">
+                            <div class="fw-bolder">
+                                NASA <i class="fa-solid fa-circle-check"></i>
+                            </div>
+                            <div>
+                                @NASA
+                            </div>
+                        </div>
+                        <!-- follow button -->
+                        <div class="col-3 d-flex align-items-center">
+                            <button class="btn btn-primary rounded-pill w-100">Follow</button>
+                        </div>
+                    </div>
+                </li>
+                <li class="list-group-item">
+                    <div class="row">
+                        <!-- avatar image -->
+                        <div class="col-2">
+                            <img class="wd-circle-avatar" src="../../images/tesla-logo.png">
+                        </div>
+                        <!-- name -->
+                        <div class="col-7">
+                            <div class="fw-bolder">
+                                Tesla <i class="fa-solid fa-circle-check"></i>
+                            </div>
+                            <div>
+                                @Tesla
+                            </div>
+                        </div>
+                        <!-- follow button -->
+                        <div class="col-3 d-flex align-items-center">
+                            <button class="btn btn-primary rounded-pill w-100">Follow</button>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </div>
+
 </div>
 
-<!-- Suggested posts w/ topic, title, number of tuits (C) -->
-<div class="wd-border-style">
-    <div class="wd-margin-left-16 wd-padding-top wd-padding-bottom
-                wd-suggested-post">
-        <span>Trending in United States</span>
-        <h1>#OpIran</h1>
-        <span>2.44M Tuits</span>
-    </div>
-    <div class="wd-margin-left-16 wd-padding-top wd-padding-bottom
-                wd-suggested-post">
-        <span>Entertainment • Trending</span>
-        <h1>Dahmer</h1>
-        <span>107K Tuits</span>
-    </div>
-</div>
-
-<!-- Suggested Posts w/ author, image, title, date (D) -->
-<div class="wd-border-style">
-    <div class="wd-margin-left-16 wd-padding-top wd-padding-bottom wd-suggested-post clearfix">
-        <img src="https://www.telegraph.co.uk/content/dam/global-health/2022/09/21/TELEMMGLPICT000298259318_trans_NvBQzQNjv4BqpVlberWd9EgFPZtcLiMQf0Rf_Wk3V23H2268P_XkPxc.jpeg?imwidth=960"/>
-        <h3>Telegraph Global Health Security</h3><span> • Yesterday</span>
-        <h1>
-            Why the world can't afford to give HIV, TB and malaria a chance to bounce back
-        </h1>
-    </div>
-</div>
-
-<!-- Suggested Posts w/ topic, image, title (E) -->
-<div class="wd-border-style">
-    <div class="wd-margin-left-16 wd-padding-top wd-padding-bottom wd-suggested-post clearfix">
-        <img src="https://pbs.twimg.com/semantic_core_img/1268959909044826112/so4nLzhE?format=jpg&name=small"/>
-        <span>Television • Last night</span>
-        <h1>Watch What Happens: Live airing on Bravo</h1>
-    </div>
-</div>
-
-<!-- Suggested Posts w/ topic, image, title (E) -->
-<div class="wd-border-style">
-    <div class="wd-margin-left-16 wd-padding-top wd-padding-bottom wd-suggested-post clearfix">
-        <img src="https://pbs.twimg.com/semantic_core_img/1573186466750013440/jzFso6IH?format=jpg&name=small"/>
-        <span>World news • LIVE</span>
-        <h1>Hong Kong to end COVID-19 hotel quarantine</h1>
-    </div>
-</div>
-
-<!-- Suggested Posts w/ author, image, title, date (D) -->
-<div class="wd-border-style">
-    <div class="wd-margin-left-16 wd-padding-top wd-padding-bottom wd-suggested-post clearfix">
-        <img src="https://pbs.twimg.com/media/FdVXdNQWAAEwylz?format=jpg&name=small"/>
-        <h3>FOX Weather</h3><span> • 35 minutes ago</span>
-        <h1>
-            Tropical Depression Nine forms in Caribbean Sea; forecast to become a hurricane that
-            could threaten Florida
-        </h1>
-    </div>
-</div>
 
 </body>
 </html>
