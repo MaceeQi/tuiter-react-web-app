@@ -6,6 +6,11 @@ body{
     background-color: rgb(35,35,35);
 }
 
+.wd-search-tuiter-dark {
+    bottom: 10px;
+    left: 30px;
+}
+
 .nav-pills .nav-link:not(.active) {
     color: #6c757d;
 }
