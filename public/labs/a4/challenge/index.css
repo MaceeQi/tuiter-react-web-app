@@ -1,0 +1,48 @@
+body{
+    background-color: black;
+}
+
+.wd-bg-color-darker-gray {
+    background-color: rgb(35,35,35);
+}
+
+.nav-pills .nav-link:not(.active) {
+    color: #6c757d;
+}
+
+.nav-pills .nav-link > .active {
+    color: #f8f9fa;
+    font-weight: bold;
+    background: transparent;
+    border-bottom: solid 4px rgb(29,161,242);
+    padding-bottom: 15px;
+}
+
+.list-group.wd-rounded-borders {
+    border-radius: 10px;
+}
+
+.wd-main-content-border {
+    border: solid 1px rgb(35,35,35);
+    border-top: none;
+}
+
+.wd-bg-color-blue {
+    background-color: rgb(29,161,242);
+}
+
+.list-group .list-group-item:not(.active) {
+    color: #f8f9fa;
+}
+
+.list-group .list-group-item.active {
+    color: #f8f9fa;
+    font-weight: bold;
+    background: transparent;
+    border: none;
+}
+
+.form-control:focus {
+    background: transparent;
+    color: #f8f9fa;
+}
