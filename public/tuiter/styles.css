@@ -53,3 +53,21 @@ body {
 .wd-remove-decoration {
     text-decoration: none;
 }
+
+.wd-circle-avatar {
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    object-fit: cover;
+}
+
+.wd-post-content-image-size {
+    max-width: 100%;
+    width: 504px;
+    height: 264px;
+    object-fit: cover;
+}
+
+.wd-rounded-corners-top {
+    border-radius: 20px 20px 0px 0px;
+}

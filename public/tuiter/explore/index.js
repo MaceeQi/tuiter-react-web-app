@@ -1,4 +1,6 @@
-// Create the JavaScript implementation of the explore component here
+// Create the JavaScript implementation of the explore screen here
+
+/* eslint-env jquery */
 
 import NavigationSidebar from "../NavigationSidebar/index.js";
 import WhoToFollowList from "../WhoToFollowList/index.js";
@@ -10,7 +12,7 @@ function exploreComponent() {
         <div class="row mt-2">
             <!-- Navigation Sidebar -->
             <div class="col-2 col-md-2 col-lg-1 col-xl-2">
-                ${NavigationSidebar()}
+                ${NavigationSidebar("explore")}
             </div>
             <!-- Explore Component -->
             <div class="col-10 col-lg-7 col-xl-6">

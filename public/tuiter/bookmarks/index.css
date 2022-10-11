@@ -33,19 +33,8 @@
     max-width: 506px;
 }
 
-.wd-rounded-corners-top {
-    border-radius: 20px 20px 0px 0px;
-}
-
 .wd-rounded-corners-bottom {
     border-radius: 0px 0px 20px 20px;
-}
-
-.wd-post-content-image-size {
-    max-width: 100%;
-    width: 504px;
-    height: 264px;
-    object-fit: cover;
 }
 
 .wd-padding-all-around {

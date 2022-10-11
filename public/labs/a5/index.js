@@ -1,3 +1,6 @@
+/* eslint-env jquery */
+/* global global1 */
+
 // alert('Hello World!');
 
 // Writing to the Console
