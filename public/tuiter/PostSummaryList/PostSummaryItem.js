@@ -14,6 +14,9 @@ const PostSummaryItem = (post) => {
                     <div class="fw-bolder">
                         ${post.title}
                     </div>
+                    <div class="text-secondary">
+                        ${(post.tweets !== undefined) ? post.tweets : ''}
+                    </div>
                 </div>
                 <!-- image -->
                 <div class="col-4">
