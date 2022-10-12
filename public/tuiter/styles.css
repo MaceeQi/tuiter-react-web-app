@@ -76,3 +76,7 @@ body {
     margin-left: 4px;
     width: 24px;
 }
+
+.wd-follow-button-width {
+    width: 100px;
+}
