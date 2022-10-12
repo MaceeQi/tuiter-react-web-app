@@ -15,7 +15,7 @@ const NavigationSidebar = (active) => {
                 </span>
             </a>
             <!-- Explore -->
-            <a href="../explore/index.html" class="list-group-item list-group-item-action 
+            <a href="../ExploreScreen/index.html" class="list-group-item list-group-item-action 
                                ${(active === "explore") ? 'active' : ''}">
                 <span class="d-flex align-items-center">
                     <i class="fa-solid fa-hashtag"></i>

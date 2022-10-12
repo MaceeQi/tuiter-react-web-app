@@ -40,7 +40,7 @@ const PostItem = (post) => {
                     </div>
                 </div>
                 <!-- icons -->
-                <div class="text-secondary d-flex justify-content-between mt-3">
+                <div class="text-secondary d-flex justify-content-between mt-3 pe-5">
                     <div>
                         <span>
                             <i class="fa-regular fa-comment"></i>
