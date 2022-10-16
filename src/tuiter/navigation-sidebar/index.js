@@ -11,7 +11,7 @@ const NavigationSidebar = () => {
         <div>
             <div className="list-group">
                 {/* Tuiter */}
-                <Link to="/" className="list-group-item list-group-item-action">
+                <Link to="/tuiter" className="list-group-item list-group-item-action">
                     <i className="bi bi-twitter"></i>
                 </Link>
 
@@ -34,7 +34,7 @@ const NavigationSidebar = () => {
                 </Link>
 
                 {/* Notifications */}
-                <Link to="/" className={`list-group-item list-group-item-action
+                <Link to="/tuiter" className={`list-group-item list-group-item-action
                                ${(active === 'notifications') ? 'active' : ''}`}>
                     <span className="d-flex align-items-center">
                         <i className="bi bi-bell-fill"></i>
@@ -43,7 +43,7 @@ const NavigationSidebar = () => {
                 </Link>
 
                 {/* Messages */}
-                <Link to="/" className={`list-group-item list-group-item-action
+                <Link to="/tuiter" className={`list-group-item list-group-item-action
                                ${(active === 'messages') ? 'active' : ''}`}>
                     <span className="d-flex align-items-center">
                         <i className="bi bi-envelope-fill"></i>
@@ -52,7 +52,7 @@ const NavigationSidebar = () => {
                 </Link>
 
                 {/* Bookmarks */}
-                <Link to="/" className={`list-group-item list-group-item-action
+                <Link to="/tuiter" className={`list-group-item list-group-item-action
                                ${(active === 'bookmarks') ? 'active' : ''}`}>
                     <span className="d-flex align-items-center">
                         <i className="bi bi-bookmark-fill"></i>
@@ -61,7 +61,7 @@ const NavigationSidebar = () => {
                 </Link>
 
                 {/* Lists */}
-                <Link to="/" className={`list-group-item list-group-item-action
+                <Link to="/tuiter" className={`list-group-item list-group-item-action
                                ${(active === 'lists') ? 'active' : ''}`}>
                     <span className="d-flex align-items-center">
                         <i className="bi bi-list-ul"></i>
@@ -70,7 +70,7 @@ const NavigationSidebar = () => {
                 </Link>
 
                 {/* Profile */}
-                <Link to="/" className={`list-group-item list-group-item-action
+                <Link to="/tuiter" className={`list-group-item list-group-item-action
                                ${(active === 'profile') ? 'active' : ''}`}>
                     <span className="d-flex align-items-center">
                         <i className="bi bi-person-fill"></i>
@@ -79,7 +79,7 @@ const NavigationSidebar = () => {
                 </Link>
 
                 {/* More */}
-                <Link to="/" className={`list-group-item list-group-item-action ps-2
+                <Link to="/tuiter" className={`list-group-item list-group-item-action ps-2
                                ${(active === 'more') ? 'active' : ''}`}>
                     <span className="d-flex align-items-center">
                         <span className="position-relative ms-2">
