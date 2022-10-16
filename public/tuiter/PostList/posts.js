@@ -30,5 +30,4 @@ export default [
         retuits: '2.4k',
         likes: '4k',
     },
-
 ];
