@@ -33,6 +33,14 @@ const NavigationSidebar = () => {
                     </span>
                 </Link>
 
+                {/* Labs */}
+                <Link to="/" className="list-group-item list-group-item-action">
+                    <span className="d-flex align-items-center">
+                        <i className="bi bi-clipboard-fill"></i>
+                        <span className="d-none d-xl-block ms-1">Lab</span>
+                    </span>
+                </Link>
+
                 {/* Notifications */}
                 <Link to="/tuiter" className={`list-group-item list-group-item-action
                                ${(active === 'notifications') ? 'active' : ''}`}>
