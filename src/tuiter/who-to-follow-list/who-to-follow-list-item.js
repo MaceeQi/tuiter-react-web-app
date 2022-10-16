@@ -12,7 +12,7 @@ const WhoToFollowListItem = (
             <div className="row">
                 {/* avatar image */}
                 <div className="col-2">
-                    <img className="wd-circle-avatar" src={`../../images/${who.avatarIcon}`}/>
+                    <img className="wd-circle-avatar" src={`../../images/${who.avatarIcon}`} alt=""/>
                 </div>
 
                 {/* name */}

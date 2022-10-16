@@ -24,7 +24,7 @@ const PostItem = (
         <li className="list-group-item d-flex bg-transparent border-secondary p-3">
             {/* avatar image */}
             <div className="pe-3">
-                <img className="wd-circle-avatar" src={`../../images/${post.avatar}`}/>
+                <img className="wd-circle-avatar" src={`../../images/${post.avatar}`} alt=""/>
             </div>
             {/* post content */}
             <div className="w-100">
@@ -46,7 +46,7 @@ const PostItem = (
                         <img className={`img-fluid
                                     ${post.article ? "border-bottom wd-rounded-corners-top" : "wd-rounded-20"}
                                     border-secondary border-1`}
-                             src={`../../images/${post.image}`}/>
+                             src={`../../images/${post.image}`} alt=""/>
 
                         {/* article content */}
                         <div className={`${post.article ? "p-3" : ""}`}>
