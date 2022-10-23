@@ -15,7 +15,25 @@ const initialTodos = [
 
 const todosSlice = createSlice({
     name: 'todos',
-    initialState: initialTodos
+    initialState: initialTodos,
+    reducers: {
+        addTodo(state, action) {
+            state.push({
+                _id: (new Date()).getTime(),
+                do: action.payload.do,
+                done: false
+            });
+        },
+        deleteTodo(state, action) {
+            const index = action.payload
+            state.splice(index, 1)
+        },
+        todoDoneToggle(state, action) {
+            const index = action.payload
+            const todo = state[index]
+            todo.done = !todo.done
+        }
+    }
 });
-
+export const {addTodo, deleteTodo, todoDoneToggle} = todosSlice.actions;
 export default todosSlice.reducer;
