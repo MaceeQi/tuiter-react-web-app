@@ -160,7 +160,7 @@ const EditProfile = () => {
             </div>
 
             {/* Edit Birthdate */}
-            <div className="mt-4">
+            <div className="mt-4 mb-4">
                 <form className="form-floating">
                     <input onChange={birthdateChangeHandler}
                            value={profileInfo.birthdate}
