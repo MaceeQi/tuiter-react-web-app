@@ -11,13 +11,13 @@ const NavigationSidebar = () => {
         <div>
             <div className="list-group">
                 {/* Tuiter */}
-                <Link to="/tuiter" className="list-group-item list-group-item-action">
+                <a className="list-group-item list-group-item-action">
                     <i className="bi bi-twitter"></i>
-                </Link>
+                </a>
 
                 {/* Home */}
                 <Link to="/tuiter/home" className={`list-group-item list-group-item-action
-                               ${(active === 'home') ? 'active' : ''}`}>
+                               ${(active === 'home' || active === '' || active === undefined) ? 'active' : ''}`}>
                     <span className="d-flex align-items-center">
                         <i className="bi bi-house-door-fill"></i>
                         <span className="d-none d-xl-block ms-1">Home</span>
@@ -42,53 +42,53 @@ const NavigationSidebar = () => {
                 </Link>
 
                 {/* Notifications */}
-                <Link to="/tuiter" className={`list-group-item list-group-item-action
-                               ${(active === 'notifications') ? 'active' : ''}`}>
+                <a className={`list-group-item list-group-item-action
+                              ${(active === 'notifications') ? 'active' : ''}`}>
                     <span className="d-flex align-items-center">
                         <i className="bi bi-bell-fill"></i>
                         <span className="d-none d-xl-block ms-1">Notifications</span>
                     </span>
-                </Link>
+                </a>
 
                 {/* Messages */}
-                <Link to="/tuiter" className={`list-group-item list-group-item-action
-                               ${(active === 'messages') ? 'active' : ''}`}>
+                <a className={`list-group-item list-group-item-action
+                              ${(active === 'messages') ? 'active' : ''}`}>
                     <span className="d-flex align-items-center">
                         <i className="bi bi-envelope-fill"></i>
                         <span className="d-none d-xl-block ms-1">Messages</span>
                     </span>
-                </Link>
+                </a>
 
                 {/* Bookmarks */}
-                <Link to="/tuiter" className={`list-group-item list-group-item-action
-                               ${(active === 'bookmarks') ? 'active' : ''}`}>
+                <a className={`list-group-item list-group-item-action
+                              ${(active === 'bookmarks') ? 'active' : ''}`}>
                     <span className="d-flex align-items-center">
                         <i className="bi bi-bookmark-fill"></i>
                         <span className="d-none d-xl-block ms-1">Bookmarks</span>
                     </span>
-                </Link>
+                </a>
 
                 {/* Lists */}
-                <Link to="/tuiter" className={`list-group-item list-group-item-action
-                               ${(active === 'lists') ? 'active' : ''}`}>
+                <a className={`list-group-item list-group-item-action
+                              ${(active === 'lists') ? 'active' : ''}`}>
                     <span className="d-flex align-items-center">
                         <i className="bi bi-list-ul"></i>
                         <span className="d-none d-xl-block ms-1">Lists</span>
                     </span>
-                </Link>
+                </a>
 
                 {/* Profile */}
-                <Link to="/tuiter" className={`list-group-item list-group-item-action
-                               ${(active === 'profile') ? 'active' : ''}`}>
+                <a className={`list-group-item list-group-item-action
+                              ${(active === 'profile') ? 'active' : ''}`}>
                     <span className="d-flex align-items-center">
                         <i className="bi bi-person-fill"></i>
                         <span className="d-none d-xl-block ms-1">Profile</span>
                     </span>
-                </Link>
+                </a>
 
                 {/* More */}
-                <Link to="/tuiter" className={`list-group-item list-group-item-action ps-2
-                               ${(active === 'more') ? 'active' : ''}`}>
+                <a className={`list-group-item list-group-item-action ps-2
+                              ${(active === 'more') ? 'active' : ''}`}>
                     <span className="d-flex align-items-center">
                         <span className="position-relative ms-2">
                             <i className="bi bi-circle-fill"></i>
@@ -98,7 +98,7 @@ const NavigationSidebar = () => {
                             More
                         </span>
                     </span>
-                </Link>
+                </a>
             </div>
 
             <button className="btn btn-primary rounded-pill w-100 mt-2">

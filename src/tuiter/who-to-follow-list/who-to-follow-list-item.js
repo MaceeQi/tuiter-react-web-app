@@ -18,7 +18,7 @@ const WhoToFollowListItem = (
                 {/* name */}
                 <div className="col-7">
                     <div className="fw-bolder">
-                        {who.userName} <i className="bi bi-check-circle-fill"></i>
+                        {who.userName} <i className="bi bi-patch-check-fill text-primary"></i>
                     </div>
                     <div>
                         @{who.handle}
