@@ -20,7 +20,8 @@ const WhatsHappening = () => {
         <div className="row">
             {/* Avatar */}
             <div className="col-auto">
-                <img src={require(`../../images/${profile.profilePicture}`)} className="wd-circle-avatar"/>
+                <img src={require(`../../images/${profile.profilePicture}`)}
+                     className="wd-circle-avatar" alt=""/>
             </div>
 
             {/* Create New Tuit */}
