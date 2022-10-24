@@ -72,7 +72,7 @@ const EditProfile = () => {
                         <i className="bi bi-x fs-4"></i>
                     </Link>
                 </div>
-                <div className="col ps-5 fw-bold fs-5 text-white d-flex align-items-center">
+                <div className="col ps-4 fw-bold fs-5 text-white d-flex align-items-center">
                     Edit Profile
                 </div>
                 <div className="col d-flex justify-content-end m-2">
