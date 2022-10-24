@@ -13,7 +13,7 @@ const ProfileComponent = () => {
                 <div className="col-1 d-flex align-items-center">
                     <i className="bi bi-arrow-left-short fs-4"></i>
                 </div>
-                <div className="col ps-5">
+                <div className="col ps-4">
                     <div className="row fw-bold fs-5 text-white">
                         {profile.firstName} {profile.lastName}
                     </div>
