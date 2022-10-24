@@ -3,9 +3,9 @@ import tuits from "./tuits.json";
 
 // Object that represents currently logged in user
 const currentUser = {
-    "userName": "NASA",
-    "handle": "@nasa",
-    "image": "nasa-logo.png",
+    "userName": "MaceeQi",
+    "handle": "@maceeqi",
+    "image": "profile-photo.png",
 };
 
 // Default values and copy over fields from current user

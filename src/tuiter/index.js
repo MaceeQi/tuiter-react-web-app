@@ -8,10 +8,13 @@ import {Provider} from "react-redux";
 import {configureStore} from "@reduxjs/toolkit";
 import whoReducer from "./reducers/who-reducer";
 import tuitsReducer from "./tuits/tuits-reducer";
+import ProfileComponent from "./profile";
+import EditProfile from "./profile/edit-profile";
+import profileReducer from "./reducers/profile-reducer";
 
 // Configure the store
 const store = configureStore({
-    reducer: {who: whoReducer, tuits: tuitsReducer}
+    reducer: {who: whoReducer, tuits: tuitsReducer, profile: profileReducer}
 });
 
 function Tuiter() {
@@ -29,6 +32,8 @@ function Tuiter() {
                         <Route index element={<HomeComponent/>}/>
                         <Route path="home" element={<HomeComponent/>}/>
                         <Route path="explore" element={<ExploreComponent/>}/>
+                        <Route path="profile" element={<ProfileComponent/>}/>
+                        <Route path="edit-profile" element={<EditProfile/>}/>
                     </Routes>
                 </div>
                 {/* 3rd Column - Who To Follow or Post Summary List*/}

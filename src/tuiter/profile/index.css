@@ -1,0 +1,15 @@
+.wd-circle-avatar-big {
+    border-radius: 50%;
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+}
+
+.wd-banner-size {
+    height: 250px;
+    object-fit: cover;
+}
+
+.wd-nudge-up-50 {
+    bottom: 50px;
+}

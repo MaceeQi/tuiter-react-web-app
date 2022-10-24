@@ -26,8 +26,11 @@ const WhoToFollowListItem = (
                 </div>
 
                 {/* follow button */}
-                <div className="col-3 d-flex align-items-center ps-0">
-                    <button className="btn btn-primary rounded-pill wd-follow-button-width">Follow</button>
+                <div className="col-3 d-flex align-items-center ps-0 pe-0">
+                    <button className="btn btn-primary rounded-pill wd-follow-button-width w-100
+                                       me-1 d-flex justify-content-center">
+                        Follow
+                    </button>
                 </div>
             </div>
         </li>

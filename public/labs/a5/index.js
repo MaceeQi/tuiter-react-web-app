@@ -123,7 +123,7 @@ console.log(numberArray1);
 console.log(stringArray1);
 console.log(variableArray1);
 
-// Array Index and Length
+// Array TuitsList and Length
 console.log('Array index and length');
 const length1 = numberArray1.length;
 const index1 = numberArray1.indexOf(3);
@@ -163,7 +163,7 @@ const string3 = stringArray1.find(a => a === 'string3');
 console.log(four);
 console.log(string3);
 
-// The Find Index Function
+// The Find TuitsList Function
 console.log('Find index');
 const fourIndex = numberArray1
     .findIndex(a => a === 4);

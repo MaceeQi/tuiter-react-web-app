@@ -1,9 +1,11 @@
 import React, {useState} from "react";
 import "./index.css"
-import {useDispatch} from "react-redux";
+import {useDispatch, useSelector} from "react-redux";
 import {createTuit} from "../tuits/tuits-reducer";
 
 const WhatsHappening = () => {
+    const profile = useSelector(state => state.profile);
+
     let [whatsHappening, setWhatsHappening] = useState('');
     const dispatch = useDispatch();
 
@@ -18,7 +20,7 @@ const WhatsHappening = () => {
         <div className="row">
             {/* Avatar */}
             <div className="col-auto">
-                <img src="../../images/nasa-logo.png" className="wd-circle-avatar"/>
+                <img src={require(`../../images/${profile.profilePicture}`)} className="wd-circle-avatar"/>
             </div>
 
             {/* Create New Tuit */}

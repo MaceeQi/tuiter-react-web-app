@@ -38,9 +38,9 @@ const PostSummaryItem = (
                     </div>
                 </div>
                 {/* image */}
-                <div className="col-4">
-                    <img className="float-end rounded-3" src={`../../images/${post.image}`}
-                         height="100px" alt=""/>
+                <div className="col-4 d-flex align-items-center justify-content-end">
+                    <img className="rounded-3 img-fluid" src={require(`../../images/${post.image}`)}
+                         height="100px" width="100px" alt=""/>
                 </div>
             </div>
         </li>

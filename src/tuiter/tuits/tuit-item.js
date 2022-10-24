@@ -31,7 +31,7 @@ const TuitItem = (
         <li className="list-group-item d-flex bg-transparent border-secondary p-3">
             {/* avatar image */}
             <div className="pe-3">
-                <img className="wd-circle-avatar" src={`../../images/${post.image}`} alt=""/>
+                <img className="wd-circle-avatar" src={require(`../../images/${post.image}`)} alt=""/>
             </div>
             {/* post content */}
             <div className="w-100">
