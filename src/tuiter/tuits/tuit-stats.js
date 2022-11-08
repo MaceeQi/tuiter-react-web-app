@@ -1,4 +1,6 @@
 import React from "react";
+import {useDispatch} from "react-redux";
+import {updateTuitThunk} from "../../services/tuits-thunks";
 
 const TuitStats = (
     {
@@ -18,16 +20,21 @@ const TuitStats = (
         }
     }
 ) => {
+    const dispatch = useDispatch();
+
     return(
         <>
+            {/* Replies */}
             <div>
                 <span>
                     <i className="bi bi-chat"></i>
                 </span>
                 <span className="ms-2">
-                    {post.replies}
+                    {post.replies === undefined ? '0' : post.replies}
                 </span>
             </div>
+
+            {/* Retuits */}
             <div>
                 <span className="position-relative">
                     <span className="position-absolute wd-nudge-up">
@@ -38,17 +45,37 @@ const TuitStats = (
                     </span>
                 </span>
                 <span className="ms-4">
-                    {post.retuits}
+                    {post.retuits === undefined ? '0' : post.retuits}
                 </span>
             </div>
+
+            {/* Likes */}
             <div>
                 <span>
-                    <i className={`bi ${post.liked ? 'bi-heart-fill text-danger' : 'bi-heart'}`}></i>
+                    <i onClick={() => dispatch(updateTuitThunk({...post, likes: post.likes + 1, liked: true}))}
+                        className={`bi ${post.liked ? 'bi-heart-fill text-danger' : 'bi-heart'}`}></i>
                 </span>
                 <span className="ms-2">
-                    {post.likes}
+                    {post.likes === undefined ? '0' : post.likes}
                 </span>
             </div>
+
+            {/* Dislikes */}
+            <div>
+                <span>
+                    <i onClick={() => dispatch(updateTuitThunk({
+                            ...post,
+                            disliked: true,
+                            dislikes: (post.dislikes === undefined ? 1 : post.dislikes + 1)
+                        }))}
+                       className={`bi ${post.disliked ? 'bi-hand-thumbs-down-fill' : 'bi-hand-thumbs-down'}`}></i>
+                </span>
+                <span className="ms-2">
+                    {post.dislikes === undefined ? '0' : post.dislikes}
+                </span>
+            </div>
+
+            {/* Share */}
             <div>
                 <i className="bi bi-upload"></i>
             </div>

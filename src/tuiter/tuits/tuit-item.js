@@ -2,7 +2,7 @@ import React from "react";
 import "./index.css";
 import TuitStats from "./tuit-stats";
 import {useDispatch} from "react-redux";
-import {deleteTuit} from "../reducers/tuits-reducer";
+import {deleteTuitThunk} from "../../services/tuits-thunks";
 
 const TuitItem = (
     {
@@ -24,7 +24,7 @@ const TuitItem = (
 ) => {
     const dispatch = useDispatch();
     const deleteTuitHandler = (id) => {
-        dispatch(deleteTuit(id));
+        dispatch(deleteTuitThunk(id));
     }
 
     return (
@@ -37,7 +37,7 @@ const TuitItem = (
             <div className="w-100">
                 <div>
                     <span className="fw-bolder">
-                        {post.userName} <i className="bi bi-patch-check-fill text-primary"></i>
+                        {post.username} <i className="bi bi-patch-check-fill text-primary"></i>
                     </span>
                     <span className="text-secondary ps-2">
                          {post.handle} • {post.time}

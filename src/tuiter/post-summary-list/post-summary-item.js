@@ -26,7 +26,7 @@ const PostSummaryItem = (
                     <div className="text-secondary">{post.topic}</div>
                     <div>
                         <span className="fw-bolder">
-                            {post.userName} <i className="bi bi-patch-check-fill text-primary"></i>
+                            {post.username} <i className="bi bi-patch-check-fill text-primary"></i>
                         </span>
                         <span className="text-secondary"> - {post.time}</span>
                     </div>
